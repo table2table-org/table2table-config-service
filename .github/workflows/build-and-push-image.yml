@@ -38,4 +38,6 @@ jobs:
             GITHUB_USER=${{ secrets.GH_USERNAME }}
             GITHUB_TOKEN=${{ secrets.GH_TOKEN }}
           push: true
-          tags: ghcr.io/table2table-org/config-service:${{ github.sha }}
+          tags: |
+            ghcr.io/table2table-org/config-service:${{ github.sha }}
+            ghcr.io/table2table-org/config-service:latest
